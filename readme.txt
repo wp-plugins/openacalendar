@@ -44,8 +44,8 @@ Upload the OpenACalendar plugin to your blog, Activate it.
 First Version
 
 = 2.0.0 =
-Events cached in WordPress
-Shorttag
-New Widget using cache
+  * Events cached in WordPress
+  * Shorttag
+  * New Widget using cache
 
 
