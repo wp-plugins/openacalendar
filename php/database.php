@@ -107,7 +107,8 @@ function OpenACalendar_db_getNextEventsForPool($poolid, $limit=5) {
 	foreach($wpdb->get_results(
 			$wpdb->prepare("SELECT event.* FROM ".$wpdb->prefix."openacalendar_event AS event ".
 					"JOIN ".$wpdb->prefix."openacalendar_event_in_pool AS event_in_pool ON event.id = event_in_pool.eventid ".
-					"WHERE event_in_pool.poolid=%d AND event.end_at > NOW() AND event.deleted = 0 GROUP BY event.id LIMIT ".intval($limit), $poolid)
+					"WHERE event_in_pool.poolid=%d AND event.end_at > NOW() AND event.deleted = 0 ".
+					"GROUP BY event.id ORDER BY event.start_at ASC LIMIT ".intval($limit), $poolid)
 			,ARRAY_A) as $data) {
 		$event = new OpenACalendarModelEvent();
 		$event->buildFromDatabase($data);
@@ -136,6 +137,7 @@ function OpenACalendar_db_newSource(OpenACalendarModelSource $source) {
 				"area_slug=%d AND ".
 				"curated_list_slug=%d AND ".
 				"country_code=%d AND ".
+				"user_attending_events=%d AND ".
 				"baseurl=%s  ",
 				$source->getPoolID(),
 				$source->getGroupSlug(),
@@ -143,6 +145,7 @@ function OpenACalendar_db_newSource(OpenACalendarModelSource $source) {
 				$source->getAreaSlug(),
 				$source->getCuratedListSlug(),
 				$source->getCountryCode(),
+				$source->getUserAttendingEvents(),
 				$source->getBaseurl()
 				)
 			,ARRAY_A);
@@ -161,11 +164,21 @@ function OpenACalendar_db_newSource(OpenACalendarModelSource $source) {
 				'area_slug'=>$source->getAreaSlug(),
 				'curated_list_slug'=>$source->getCuratedListSlug(),
 				'country_code'=>$source->getCountryCode(),
+				'user_attending_events'=>$source->getUserAttendingEvents(),
 				'baseurl'=>$source->getBaseurl(),
 			));
 		$source->setId($wpdb->insert_id);
 	}
 	
 	return $source->getId();
+}
+
+function OpenACalendar_db_deleteSource(OpenACalendarModelSource $source) {
+	global $wpdb;
+	$wpdb->update($wpdb->prefix."openacalendar_source",array(
+		'deleted'=>1,
+	),array(
+		'id'=>$source->getId(),
+	));
 }
 
