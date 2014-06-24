@@ -3,7 +3,7 @@ Contributors: jarofgreen
 Tags: events
 Requires at least: 3.0.0
 Tested up to: 3.9.0
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 License: BSD
 
 Incorporate data from an OpenACalendar site into your Wordpress. http://ican.openacalendar.org/
@@ -81,3 +81,7 @@ First Version
 = 2.0.2 =
   * Can delete source
   * Actually order events!
+
+= 2.0.3 =
+  * Can show events a user is attending
+
