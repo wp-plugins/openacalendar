@@ -83,5 +83,5 @@ First Version
   * Actually order events!
 
 = 2.0.3 =
-  * Can show events a user is attending
+  * Can show events a user is attending (Only works on OpenACalendar sites v1.1.5 and up. http://opentechcalendar.co.uk/ and http://hasacalendar.co.uk/ have been upgraded.)
 
