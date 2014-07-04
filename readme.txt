@@ -87,7 +87,7 @@ First Version
 = 2.0.3 =
   * Can show events a user is attending (Only works on OpenACalendar sites v1.1.5 and up. http://opentechcalendar.co.uk/ and http://hasacalendar.co.uk/ have been upgraded.)
 
-= 2.0.4 ]
+= 2.0.4 =
   * Can pick URL to use
   * Parse usesummarydisplay option to stort code properly
 
