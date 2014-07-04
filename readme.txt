@@ -3,7 +3,7 @@ Contributors: jarofgreen
 Tags: events
 Requires at least: 3.0.0
 Tested up to: 3.9.0
-Stable tag: 2.0.3
+Stable tag: 2.0.4
 License: BSD
 
 Incorporate data from an OpenACalendar site into your Wordpress. http://ican.openacalendar.org/
@@ -49,15 +49,17 @@ You can also use a shortcode "openacalendar_events"
 Pass attributes:
 
   * poolid - required. Displayed on the settings screen.
-  * descriptionmaxlength - optional.
-  * usesummarydisplay - optional.
-  * startformat - optional.
-  * eventcount - optional.
+  * descriptionmaxlength - optional, int.
+  * usesummarydisplay - optional, boolean. "true" or "false"
+  * startformat - optional. String in same format as http://php.net/manual/en/function.date.php
+  * eventcount - optional, int.
+  * url - optional, string. What URL to use? "site" links to calendar site, "url" links to URL of event.
 
 Examples:
 
   * [openacalendar_events poolid=1]
   * [openacalendar_events poolid=2 eventcount=5 startformat="jS F Y"]
+  * [openacalendar_events poolid=2 usesummarydisplay="false"]
 
 = Development =
 
@@ -84,4 +86,8 @@ First Version
 
 = 2.0.3 =
   * Can show events a user is attending (Only works on OpenACalendar sites v1.1.5 and up. http://opentechcalendar.co.uk/ and http://hasacalendar.co.uk/ have been upgraded.)
+
+= 2.0.4 ]
+  * Can pick URL to use
+  * Parse usesummarydisplay option to stort code properly
 
