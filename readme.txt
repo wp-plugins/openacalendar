@@ -89,5 +89,5 @@ First Version
 
 = 2.0.4 =
   * Can pick URL to use
-  * Parse usesummarydisplay option to stort code properly
+  * Parse usesummarydisplay option to short code properly
 
