@@ -3,7 +3,7 @@ Contributors: jarofgreen
 Tags: events
 Requires at least: 3.0.0
 Tested up to: 3.9.0
-Stable tag: 2.0.5
+Stable tag: 2.0.6
 License: BSD
 
 Incorporate data from an OpenACalendar site into your Wordpress. http://ican.openacalendar.org/
@@ -100,4 +100,6 @@ First Version
 = 2.0.5 =
   * Can show end times when using short code
 
+= 2.0.6 = 
+  * Bug fix; version 2.0.5 was showing start times instead of end times
 
