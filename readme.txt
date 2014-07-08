@@ -55,7 +55,8 @@ Pass attributes:
   * eventcount - optional, int.
   * url - optional, string. What URL to use? "site" links to calendar site, "url" links to URL of event.
 
-By default the short code only shows start times, but it can also show end times to.
+By default the short code only shows start times, but it can also show end times to:
+
   * endformat - optional, String in same format as http://php.net/manual/en/function.date.php How to format end time. Defaults to empty.
   * endformatsameday - optional, String in same format as http://php.net/manual/en/function.date.php How to format end time if the event starts and ends on the same day.  Defaults to whatever the value of endformat is.
   * startandenddivider - optional, String. This seperates the start and end times. It defaults to " to ".
