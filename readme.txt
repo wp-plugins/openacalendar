@@ -3,7 +3,7 @@ Contributors: jarofgreen
 Tags: events
 Requires at least: 3.0.0
 Tested up to: 3.9.0
-Stable tag: 2.0.4
+Stable tag: 2.0.5
 License: BSD
 
 Incorporate data from an OpenACalendar site into your Wordpress. http://ican.openacalendar.org/
@@ -55,6 +55,11 @@ Pass attributes:
   * eventcount - optional, int.
   * url - optional, string. What URL to use? "site" links to calendar site, "url" links to URL of event.
 
+By default the short code only shows start times, but it can also show end times to.
+  * endformat - optional, String in same format as http://php.net/manual/en/function.date.php How to format end time. Defaults to empty.
+  * endformatsameday - optional, String in same format as http://php.net/manual/en/function.date.php How to format end time if the event starts and ends on the same day.  Defaults to whatever the value of endformat is.
+  * startandenddivider - optional, String. This seperates the start and end times. It defaults to " to ".
+
 Examples:
 
   * [openacalendar_events poolid=1]
@@ -90,4 +95,8 @@ First Version
 = 2.0.4 =
   * Can pick URL to use
   * Parse usesummarydisplay option to short code properly
+
+= 2.0.5 =
+  * Can show end times when using short code
+
 
