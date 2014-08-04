@@ -3,7 +3,7 @@ Contributors: jarofgreen
 Tags: events
 Requires at least: 3.0.0
 Tested up to: 3.9.0
-Stable tag: 2.0.6
+Stable tag: 2.0.7
 License: BSD
 
 Incorporate data from an OpenACalendar site into your Wordpress. http://ican.openacalendar.org/
@@ -54,6 +54,7 @@ Pass attributes:
   * startformat - optional. String in same format as http://php.net/manual/en/function.date.php
   * eventcount - optional, int.
   * url - optional, string. What URL to use? "site" links to calendar site, "url" links to URL of event.
+  * image - optional, string or int. Whether to show an image from the event. One of "normal", "full" or an integer. The integer sets the maximum size of the image in pixels. "full" shows the image as large as possible. "normal" shows the image at the size set by the server.
 
 By default the short code only shows start times, but it can also show end times to:
 
@@ -102,4 +103,7 @@ First Version
 
 = 2.0.6 = 
   * Bug fix; version 2.0.5 was showing start times instead of end times
+
+= 2.0.7 =
+  * Can show image with shortcode
 
