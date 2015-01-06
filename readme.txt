@@ -2,8 +2,8 @@
 Contributors: jarofgreen
 Tags: events
 Requires at least: 3.0.0
-Tested up to: 4.0.0
-Stable tag: 2.0.8
+Tested up to: 4.1.0
+Stable tag: 2.0.9
 License: BSD
 
 Incorporate data from an OpenACalendar site into your Wordpress. http://ican.openacalendar.org/
@@ -112,5 +112,9 @@ First Version
   * Check country code when adding country https://github.com/OpenACalendar/OpenACalendar-Web-WordPress/issues/45
   * Show better errors when importing data https://github.com/OpenACalendar/OpenACalendar-Web-WordPress/issues/44
   * Mark suitable for WordPress 4
+
+= 2.0.9 =
+  * No functional change, but easier to follow admin UI's.
+  * Mark suitable for WordPress 4.1
 
 
