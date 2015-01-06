@@ -75,37 +75,9 @@ Development happens at: https://github.com/OpenACalendar/OpenACalendar-Web-WordP
 
 == Changelog ==
 
-= 1.0.0 =
-First Version
-
-= 2.0.0 =
-  * Events cached in WordPress
-  * Shorttag
-  * New Widget using cache
-
-= 2.0.1 =
-  * Better admin UI
-  * Minor improvemments
-
-= 2.0.2 =
-  * Can delete source
-  * Actually order events!
-
-= 2.0.3 =
-  * Can show events a user is attending (Only works on OpenACalendar sites v1.1.5 and up. http://opentechcalendar.co.uk/ and http://hasacalendar.co.uk/ have been upgraded.)
-
-= 2.0.4 =
-  * Can pick URL to use
-  * Parse usesummarydisplay option to short code properly
-
-= 2.0.5 =
-  * Can show end times when using short code
-
-= 2.0.6 = 
-  * Bug fix; version 2.0.5 was showing start times instead of end times
-
-= 2.0.7 =
-  * Can show image with shortcode
+= 2.0.9 =
+  * No functional change, but easier to follow admin UI's.
+  * Mark suitable for WordPress 4.1
 
 = 2.0.8 =
   * Fix bug when adding source with country https://github.com/OpenACalendar/OpenACalendar-Web-WordPress/issues/47
@@ -113,8 +85,35 @@ First Version
   * Show better errors when importing data https://github.com/OpenACalendar/OpenACalendar-Web-WordPress/issues/44
   * Mark suitable for WordPress 4
 
-= 2.0.9 =
-  * No functional change, but easier to follow admin UI's.
-  * Mark suitable for WordPress 4.1
+= 2.0.7 =
+  * Can show image with shortcode
 
+= 2.0.6 = 
+  * Bug fix; version 2.0.5 was showing start times instead of end times
+
+= 2.0.5 =
+  * Can show end times when using short code
+
+= 2.0.4 =
+  * Can pick URL to use
+  * Parse usesummarydisplay option to short code properly
+
+= 2.0.3 =
+  * Can show events a user is attending (Only works on OpenACalendar sites v1.1.5 and up. http://opentechcalendar.co.uk/ and http://hasacalendar.co.uk/ have been upgraded.)
+
+= 2.0.2 =
+  * Can delete source
+  * Actually order events!
+
+= 2.0.1 =
+  * Better admin UI
+  * Minor improvemments
+
+= 2.0.0 =
+  * Events cached in WordPress
+  * Shorttag
+  * New Widget using cache
+
+= 1.0.0 =
+  * First Version
 
