@@ -3,7 +3,7 @@ Contributors: jarofgreen
 Tags: events
 Requires at least: 3.0.0
 Tested up to: 4.1.0
-Stable tag: 2.0.9
+Stable tag: 2.0.10
 License: BSD
 
 Incorporate data from an OpenACalendar site into your Wordpress. http://ican.openacalendar.org/
@@ -40,11 +40,11 @@ Click "Get events from this source now".
 
 = Widget =
 
-You can then use a widget in the sidebar. The Pool ID you need is displayed on the the settings screen.
+You can then use a widget in the sidebar.
 
 = Shortcode =
 
-You can also use a shortcode "openacalendar_events"
+You can also use a shortcode "openacalendar_events". There is a guide to the short code in the administrator user interface.
 
 Pass attributes:
 
@@ -74,6 +74,9 @@ Development happens at: https://github.com/OpenACalendar/OpenACalendar-Web-WordP
 
 
 == Changelog ==
+
+= 2.0.10 =
+  * No functional change, but easier to follow admin UI's.
 
 = 2.0.9 =
   * No functional change, but easier to follow admin UI's.
