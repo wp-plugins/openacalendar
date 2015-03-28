@@ -177,7 +177,7 @@ function OpenACalendar_admin_menu() {
 
 
 			print '<h4>usesummarydisplay</h4>';
-			print '<div>Does display title include group or not? Boolean. "true" or "false".</div>';
+			print '<div>Does display title include group or not? "yes" or "no".</div>';
 			print '<input type="text" name="attribute_usesummarydisplay" value="'.htmlspecialchars($attributes['usesummarydisplay']).'">';
 
 			print '<h4>startformat</h4>';
@@ -207,6 +207,10 @@ function OpenACalendar_admin_menu() {
 			print '<h4>image</h4>';
 			print '<div>Whether to show image. "false", "full" for full size, "normal" for normal size or a pixel dimension for a custom size.</div>';
 			print '<input type="text" name="attribute_image" value="'.htmlspecialchars($attributes['image']).'">';
+
+			print '<h4>eventshowmorelink</h4>';
+			print '<div>Whether to show "more" link under each event. "yes" or "no".</div>';
+			print '<input type="text" name="attribute_eventshowmorelink" value="'.htmlspecialchars($attributes['eventshowmorelink']).'">';
 
 
 			print '<div style="padding-top: 40px;"><input type="submit" value="Update Shortcode with your options"></div>';
