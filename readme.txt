@@ -3,7 +3,7 @@ Contributors: jarofgreen
 Tags: events
 Requires at least: 3.0.0
 Tested up to: 4.1.0
-Stable tag: 2.0.11
+Stable tag: 2.0.12
 License: BSD
 
 Incorporate data from an OpenACalendar site into your Wordpress. http://ican.openacalendar.org/
@@ -74,6 +74,12 @@ Development happens at: https://github.com/OpenACalendar/OpenACalendar-Web-WordP
 
 
 == Changelog ==
+
+= 2.0.12 =
+  * Add link to more events under Widget (off by default)
+  * Add option to hide "more info" link in Widget and Shortcode (shown by default)
+  * Add option in Widget to open links in new window (off by default)
+  * Add schema.org tags to output
 
 = 2.0.11 =
   * Fixed bug introduced in 2.0.10 for users with short open tag disabled.
